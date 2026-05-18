@@ -9,11 +9,23 @@
         <StackPanel Width="580" VerticalAlignment="Center">
             <StackPanel Background="#0f172a" Margin="0 0 0 24">
                 <TextBlock Text="Seu saldo" Foreground="#94a3b8" FontWeight="Bold" FontSize="12" Margin="16 16 16 0" />
-                <TextBlock Foreground="#34d399" FontWeight="Bold" FontSize="30" Margin="16 0 16 16" x:Name="tbSaldo"/>
+                <TextBlock Foreground="#34d399" FontWeight="Bold" FontSize="30" Margin="16 0 16 16" x:Name="tbSaldo" />
             </StackPanel>
 
             <StackPanel Background="#0f172a">
-                <TextBlock x:Name="tbResultado" Text="0" Foreground="#94a3b8" FontSize="20" Margin="16 16 16 0" />
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 15">
+                    <Border>
+                        <TextBlock Text="❓" x:Name="tbSlot1" Foreground="#f1f1f1" FontSize="32" />
+                    </Border>
+
+                    <Border>
+                        <TextBlock Text="❓" x:Name="tbSlot2" Foreground="#f1f1f1" FontSize="32" />
+                    </Border>
+
+                    <Border>
+                        <TextBlock Text="❓" x:Name="tbSlot3" Foreground="#f1f1f1" FontSize="32" />
+                    </Border>
+                </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="16 0">
                     <TextBlock Text="Quantidade de Giros:" Foreground="#94a3b8" FontWeight="Bold" FontSize="20" />
                     <TextBox FontSize="20" x:Name="tbQuantidade" Text="1" />
